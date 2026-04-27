@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic page setup -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Page title shown in browser tab -->
+  <title>Admin Dashboard - Oracle of Shrimp</title>
+
+  <!-- Main site styles -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- Admin dashboard specific styles -->
+  <link rel="stylesheet" href="../css/admin_dashboard_style.css">
+</head>
+
+<body>
+
+  <!-- Main page header -->
+  <header class="title_jumbo" style="text-align:center; font-size:50px;">
+    ADMIN
+  </header>
+
+  <!-- USERS SECTION -->
+  <section>
+    <h3>Users</h3>
+
+    <!-- User table -->
+    <!-- This table is filled by JavaScript using data from the database -->
+    <table id="usersTable">
+      <thead>
+        <tr>
+          <!-- Username column -->
+          <th>Username</th>
+
+          <!-- Role column shows whether the user is Admin or User -->
+          <th>Role</th>
+
+          <!-- Buttons like View, Reset Password, and Delete go here -->
+          <th>Actions</th>
+
+          <!-- User email column -->
+          <th>Email</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <!-- JavaScript inserts user rows here -->
+      </tbody>
+    </table>
+  </section>
+
+  <!-- SKINS AND ITEMS SECTION -->
+  <section>
+    <h3>Add/Edit Entries</h3>
+
+    <!-- Existing Skins -->
+    <div class="card">
+      <h4>Existing Skins</h4>
+
+      <!-- JavaScript fills this dropdown with skins from the database -->
+      <select id="existingSkins" class="existing-dropdown"></select>
+
+      <!-- Deletes the currently selected skin -->
+      <button class="add-btn" id="deleteSkinBtn">Delete Selected Skin</button>
+    </div>
+
+    <!-- Add New Skin -->
+    <div class="card">
+      <h4>Add New Skin</h4>
+
+      <!-- Input for skin name -->
+      <input type="text" id="newSkinName" placeholder="Skin Name">
+
+      <!-- Dropdown for choosing skin rarity -->
+      <select id="newSkinRarity" class="rarity-dropdown">
+        <option value="common">Common</option>
+        <option value="uncommon">Uncommon</option>
+        <option value="rare">Rare</option>
+        <option value="legendary">Legendary</option>
+      </select>
+
+      <!-- Adds the new skin to the database -->
+      <button class="add-btn" id="addSkinBtn">Add Skin</button>
+    </div>
+
+    <!-- Existing Items -->
+    <div class="card">
+      <h4>Existing Items</h4>
+
+      <!-- JavaScript fills this dropdown with items from the database -->
+      <select id="existingItems" class="existing-dropdown"></select>
+
+      <!-- Deletes the currently selected item -->
+      <button class="add-btn" id="deleteItemBtn">Delete Selected Item</button>
+    </div>
+
+    <!-- Add New Item -->
+    <div class="card">
+      <h4>Add New Item</h4>
+
+      <!-- Input for item name -->
+      <input type="text" id="newItemName" placeholder="Item Name">
+
+      <!-- Dropdown for choosing item rarity -->
+      <select id="newItemRarity" class="rarity-dropdown">
+        <option value="common">Common</option>
+        <option value="uncommon">Uncommon</option>
+        <option value="rare">Rare</option>
+        <option value="legendary">Legendary</option>
+      </select>
+
+      <!-- Adds the new item to the database -->
+      <button class="add-btn" id="addItemBtn">Add Item</button>
+    </div>
+  </section>
+
+  <!-- PAGE BUTTONS -->
+  <div class="buttons-row">
+    <!-- This button does not manually save everything anymore -->
+    <!-- Changes are saved when actions happen -->
+    <button id="saveChangesBtn" class="btn">Save Changes</button>
+
+    <!-- Returns user to login page -->
+    <button id="backToLoginBtn" class="btn admin-button">Back to Login</button>
+  </div>
+
+  <!-- JavaScript file for admin dashboard logic -->
+  <script src="../scripts/admin_dashboard.js"></script>
+</body>
+
+</html>

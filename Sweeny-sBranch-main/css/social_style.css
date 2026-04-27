@@ -1,0 +1,100 @@
+:root {
+  --side-bar-width: 255px;
+  --side-bar-hieght: 250px;
+}
+
+body {
+  background-color: #91ebfe;
+  font-family: "Abhaya Libre", serif;
+  font-weight: 10;
+  font-style: normal;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Center table Sytle */
+table.leader-table {
+  width: 100%;
+  background-color: #FFFFFF;
+  border-collapse: collapse;
+  border-width: 2px;
+  border-color: #7EA8F8;
+  border-style: solid;
+  color: #000000;
+}
+
+table.leader-table td,
+table.customTable th {
+  border-width: 2px;
+  border-color: #7EA8F8;
+  border-style: solid;
+  padding: 5px;
+}
+
+table.leader-table t2head {
+  background-color: #7EA8F8;
+}
+
+.social-side-container {
+  width: var(--side-bar-width);
+  height: var(--side-bar-hieght);
+  position: relative;
+  border-radius: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.container-title {
+  width: 100%;
+  justify-content: center;
+}
+
+.social-panel {
+  width: 300px;
+  height: 100vh;
+  background-color: green;
+  justify-content: center;
+  display: grid;
+}
+
+
+.search-container {
+  display: flex;
+}
+
+.search-container input[type="search"] {
+  flex: 1;
+  padding: 10px 15px;
+  font-size: 11px;
+  border: 2px solid #ccc;
+  border-right: none;
+  /* Join input and button */
+  border-radius: 16px;
+  /* Rounded left side */
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.search-container input[type="search"]:focus {
+  border-color: #007bff;
+  /* Highlight blue on focus */
+}
+
+.shrimp-card {
+  display: grid;
+}
+
+
+#cssportal-grid {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+  width: auto;
+  height: auto;
+}
+
+#cssportal-grid p,
+h4 {
+  margin: 0;
+}

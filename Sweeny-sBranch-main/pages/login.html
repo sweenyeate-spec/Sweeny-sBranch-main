@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Oracle of Shrimp</title>
+  <!-- Link to main CSS -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/login_style.css">
+</head>
+
+<body>
+
+  <!-- Login Form Container -->
+  <div class="form-area">
+    <p id="loginMessage"></p>
+    <h2 class="title">Login</h2>
+    <form id="loginForm">
+      <div class="login-form-container">
+
+        <!-- Username Input -->
+        <input type="text" name="username" id="username" class="form-style" placeholder="Username" required>
+
+        <!-- Password Input -->
+        <input type="password" name="password" id="password" class="form-style" placeholder="Password" required>
+
+      </div>
+
+      <div class="login-button-container">
+        <!-- Login Button -->
+        <button id="loginBtn" class="btn" role="button">Log In</button>
+      </div>
+  </div>
+  <script src="../scripts/login.js" defer></script>
+</body>
+
+</html>

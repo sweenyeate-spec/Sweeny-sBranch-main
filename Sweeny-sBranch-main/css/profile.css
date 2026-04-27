@@ -1,0 +1,116 @@
+/* profile.css */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #91ebfe;
+  font-family: "Abhaya Libre", serif;
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* Title */
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #033b44;
+}
+
+/* Main Layout Wrapper */
+.dashboard {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* stats left, fortune right */
+  grid-template-rows: auto auto;
+  gap: 20px;
+  align-items: start;
+}
+
+/* Card Style */
+.card {
+  background-color: #8ff0e1;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+/* Stats (Left) */
+.stats {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+/* Fortune Table (Right) */
+.fortune-box {
+  grid-column: 2;
+  grid-row: 1;
+  overflow-x: auto;
+}
+
+/* Table fix */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+th, td {
+  border-bottom: 1px solid #0aa7b5;
+  padding: 10px;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+/* Inventory (Bottom Full Width) */
+.inventory {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.slot {
+  background-color: #f26c5b;
+  aspect-ratio: 1 / 1;
+  border-radius: 4px;
+}
+
+/* Button Base Style */
+.btn {
+  position: fixed;
+  bottom: 20px;
+  font-size: 16px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #000;
+  background-color: #f26c5b;
+
+  padding: 12px 12px;   /* 👈 reduces width a lot */
+  border-radius: 4px;
+  box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
+
+  display: inline-block; /* keeps it tight to content */
+  width: auto;
+
+  transition: transform 0.1s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Back Button (right) */
+.back-btn {
+  left: 20px;
+}
+
+/* Logout Button (left) */
+.logout-btn {
+  right: 20px;
+}

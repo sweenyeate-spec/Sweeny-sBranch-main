@@ -1,0 +1,18 @@
+[
+    {
+        "fortuneLogID": 1,
+        "userID": 1,
+        "fortuneID": 1,
+        "fortuneDescription": "Today is a good day to make a new friend.",
+        "isEvil": 0,
+        "receivedAt": "2026-04-27 15:59:07"
+    },
+    {
+        "fortuneLogID": 2,
+        "userID": 2,
+        "fortuneID": 1,
+        "fortuneDescription": "Today is a good day to make a new friend.",
+        "isEvil": 0,
+        "receivedAt": "2026-04-27 15:59:32"
+    }
+]

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Profile</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/profile.css">
+</head>
+
+<body>
+
+  <h1 class="title">Profile</h1>
+
+  <div class="dashboard">
+
+    <!-- LEFT: Stats -->
+    <div class="card stats">
+      <h3>Stats</h3>
+      <p>Starting Name: <span id="name">User</span></p>
+      <p>Number of Fortunes: <span id="fortuneCount">0</span></p>
+      <p>Starting Birthday: --</p>
+      <p>Starting Inventory Size: <span id="invSize">0</span></p>
+      <p>Number of Full Fortunes: 0</p>
+      <p>Days Since Last Fortune: --</p>
+    </div>
+
+    <!-- RIGHT: Fortune Table -->
+    <div class="card fortune-box">
+      <table>
+        <thead>
+          <tr>
+            <th>Fortune</th>
+            <th>Item</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody id="fortuneTable"></tbody>
+      </table>
+    </div>
+
+    <!-- INVENTORY -->
+    <div class="card inventory">
+      <h3>Inventory</h3>
+      <div id="inventoryGrid" class="grid"></div>
+    </div>
+
+    <!-- SHRIMP IMAGE -->
+    <div class="shrimp-area">
+      <img src="../images/shrimp.png" alt="shrimp" class="shrimp">
+    </div>
+
+    <!-- BACK TO & LOGOUT BUTTONS -->
+    <a href="fortunes.html" class="btn back-btn">BACK</a>
+    <a href="login.html" class="btn logout-btn">LOG OUT</a>
+
+  </div>
+
+  <script src="profile.js"></script>
+</body>
+</html>

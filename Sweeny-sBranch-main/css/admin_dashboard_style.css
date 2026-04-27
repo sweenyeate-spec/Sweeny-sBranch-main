@@ -1,0 +1,37 @@
+ /* Light teal dropdown */
+    select.rarity-dropdown, select.existing-dropdown {
+      background-color: #a0e0e0;
+      padding: 5px;
+      border-radius: 5px;
+      border: 1px solid #07a8ba;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .buttons-row {
+      display: flex;
+      justify-content: space-between;
+      width: 90%;
+      max-width: 1000px;
+      margin: 20px auto;
+    }
+
+    /* Smaller button variant */
+    .add-btn {
+      padding: 4px 10px;
+      font-size: 12px;
+      border-radius: 4px;
+      background-color: #f26c5b;
+      color: #000;
+    }
+    
+   .card {
+      background-color: #85F2E7;
+      padding: 15px;
+      border-radius: 15px;
+      border: 2px solid #07a8ba;
+      box-shadow: 3px 3px 0px 0px #07a8ba;
+      margin-bottom: 20px;
+      width: 90%;
+      max-width: 600px;
+    }

@@ -1,0 +1,22 @@
+Technologies
+ASP.NET Core Web Application (Razor Pages)/C# and Microsoft SQL Server, GitHub, Figma, and Lucidchart. 
+
+The web application must allow users to create an account via a web interface by collecting at least the following information:
+o	First name
+o	Last name
+o	Username
+o	Phone number and/or email
+o	Password
+Authentication
+The web application must allow a user who has an account in the application to log in only when the user provides the correct credentials.
+The web application must prevent a user from logging in if the user provides incorrect credentials.
+The web application must allow a user to log out of the web application.
+Authorization
+The web application will allow users to access a page or a feature they are authorized to.
+The web application will prevent a user from accessing a page or a feature that they are not authorized to.
+Administration
+The web application will have at least an administrator account that has unrestricted access to every page and every feature in the application.
+The web application will allow the administrator to add, edit, and/or delete a non-administrative account.
+Profile Management
+The web application must allow users to edit their profiles, such as their First and Last Names, Phone Numbers, Passwords, etc. 
+Users can reset password via email or phone number. Users can also delete their accounts.

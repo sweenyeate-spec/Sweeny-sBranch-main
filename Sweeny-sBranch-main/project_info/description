@@ -1,0 +1,11 @@
+Course Section: CSCI 3321
+Project Name: Oracle of Shrimp
+Team Members: Cameron Allison, Sweeny Eate, Deborah Lee, Ross Palacio, and Logan Sedwick
+Project Summary: It will tell your dreams, hopes, and desires. It's very simple! Click on the shrimp to get your very real and true fortune. Your {insert your shrimp’s name here} will perform nautical ritual to give you your fortune once clicked.
+Examples of Project Features:
+Feature 1: Shrimp will give a user a fortune.
+Feature 2: The shrimp will be animated when clicked on.
+Feature 3: User can name or rename their shrimp.
+Feature 4: Fortunes will be stored in a database and queried when a user needs a fortune.
+Feature 5: User can toggle to get evil fortune.
+Feature 6: Shrimps will be collectible
